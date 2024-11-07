@@ -31,26 +31,29 @@ int main()
 	//declaring variable
 	float gross_pay;
 	gross_pay = total_hours * hourly_wages;
-	printf("%.2f\n",gross_pay);
+	printf("Gross pay  :%.2f\n",gross_pay);
 	
 	//calculating net_tax
 	//declarinmg variable
 	float tax1;
 	float tax2;
 	float net_pay;
+        float total_tax;
 	
 	//using statement
 	if(gross_pay == 600){
 		tax1 = 600 * 0.15;
 		net_pay = gross_pay - tax1;
-		printf("%.2f\n",net_pay);
+		printf("Net pay  :%.2f\n",net_pay);
 	}
 		
 	
 	if(gross_pay > 600){
 		tax2 = (gross_pay - 600) * 0.2;
 		net_pay =gross_pay - (tax2 + tax1);
-		printf("%.2f",net_pay);
+		printf("Net pay  :%.2f\n",net_pay);
+                total_tax=tax2+tax1;
+                printf("Total tax  :%.2f\n",total_tax);
 	}
 		
 	
